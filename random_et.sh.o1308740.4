@@ -1,0 +1,566 @@
+SCIP version 0.82 [precision: 8 byte] [memory: block] [mode: optimized] [LP solver: SOPLEX 1.3.0]
+Copyright (c) 2002-2006 Konrad-Zuse-Zentrum fuer Informationstechnik Berlin (ZIB)
+
+reading parameter file <scip.set>
+
+read problem </ufs/psxjm3/instances/random_4.ctt.et.zpl>
+============
+
+****************************************************
+* Zuse Institute Mathematical Programming Language *
+* Release 2.04  Copyright (C)2005 by Thorsten Koch *
+****************************************************
+
+original problem has 22020 variables (21950 bin, 70 int, 0 impl, 0 cont) and 8563 constraints
+
+solve problem
+=============
+
+LP Solver <SOPLEX 1.3.0>: dual feasibility tolerance cannot be set -- tolerance of SCIP and LP solver may differ
+LP Solver <SOPLEX 1.3.0>: barrier convergence tolerance cannot be set -- tolerance of SCIP and LP solver may differ
+LP Solver <SOPLEX 1.3.0>: fastmip setting not available -- SCIP parameter has no effect
+LP Solver <SOPLEX 1.3.0>: scaling not available -- SCIP parameter has no effect
+LP Solver <SOPLEX 1.3.0>: presolving not available -- SCIP parameter has no effect
+transformed problem has 22020 variables (21950 bin, 70 int, 0 impl, 0 cont) and 8563 constraints
+   8563 constraints of type <linear>
+
+presolving:
+(round 1) 2711 del vars, 316 del conss, 2711 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4306 clqs
+(round 2) 2711 del vars, 576 del conss, 2711 chg bounds, 0 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4306 clqs
+(round 3) 2711 del vars, 2534 del conss, 2711 chg bounds, 1963 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4306 clqs
+(round 4) 2713 del vars, 2534 del conss, 2711 chg bounds, 1963 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4305 clqs
+(round 5) 2713 del vars, 2534 del conss, 2711 chg bounds, 1964 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4305 clqs
+(round 6) 2713 del vars, 2535 del conss, 2711 chg bounds, 1965 chg sides, 0 chg coeffs, 0 upgd conss, 0 impls, 4305 clqs
+(round 7) 2713 del vars, 2535 del conss, 2711 chg bounds, 1965 chg sides, 0 chg coeffs, 5652 upgd conss, 0 impls, 4305 clqs
+(round 8) 2713 del vars, 2607 del conss, 2711 chg bounds, 1965 chg sides, 3 chg coeffs, 5652 upgd conss, 0 impls, 4305 clqs
+   (35.2s) probing: 100/19238 (0.5%) - 0 fixings, 0 aggregations, 0 implications, 0 bound changes
+presolving (9 rounds):
+ 2713 deleted vars, 2607 deleted constraints, 2711 tightened bounds, 0 added holes, 1965 changed sides, 3 changed coefficients
+ 0 implications, 4305 cliques
+presolved problem has 19307 variables (19238 bin, 69 int, 0 impl, 0 cont) and 5956 constraints
+   2500 constraints of type <knapsack>
+   2762 constraints of type <setppc>
+    376 constraints of type <linear>
+    318 constraints of type <logicor>
+objective value is always integral
+Presolving Time: 34.64
+
+ time | node  | left  |LP iter| mem |mdpt |frac |vars |cons |ccons|cols |rows |cuts |confs|strbr|  dualbound   | primalbound  |  gap   
+ 79.3s|     1 |     0 |  6956 | 164M|   0 | 721 |  19k|5956 |5956 |  19k|5956 |   0 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+ 99.4s|     1 |     0 |  9160 | 167M|   0 | 713 |  19k|5956 |5956 |  19k|5962 |   6 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  121s|     1 |     0 | 11411 | 167M|   0 | 665 |  19k|5956 |5956 |  19k|5968 |  12 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  136s|     1 |     0 | 13038 | 167M|   0 | 724 |  19k|5956 |5956 |  19k|5975 |  19 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  151s|     1 |     0 | 14505 | 167M|   0 | 705 |  19k|5956 |5956 |  19k|5981 |  25 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  165s|     1 |     0 | 15948 | 167M|   0 | 740 |  19k|5956 |5956 |  19k|5988 |  32 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  179s|     1 |     0 | 17234 | 167M|   0 | 716 |  19k|5956 |5956 |  19k|5994 |  38 |   0 |   0 | 8.000000e+02 |      --      |    Inf 
+  570s|     1 |     2 | 30530 | 167M|   0 | 716 |  19k|5956 |5956 |  19k|5994 |  38 |   0 |  30 | 8.000000e+02 |      --      |    Inf 
+ 2618s|   100 |   101 |158280 | 169M|  99 | 289 |  19k|5956 |5111 |  19k|5975 |  38 |   0 | 207 | 8.000000e+02 |      --      |    Inf 
+s2910s|   181 |   180 |199146 | 171M| 180 |   4 |  19k|5956 |4342 |  19k|5975 |  38 |   0 | 239 | 8.000000e+02 | 8.180000e+02 |   2.25%
+ 3219s|   200 |   201 |228529 | 173M| 180 | 600 |  19k|5954 |5772 |  19k|5975 |  38 |   0 | 255 | 8.000000e+02 | 8.180000e+02 |   2.25%
+ 4323s|   300 |   301 |347298 | 174M| 180 | 365 |  19k|5954 |5049 |  19k|5975 |  38 |   0 | 319 | 8.000000e+02 | 8.180000e+02 |   2.25%
+ 5733s|   400 |   401 |483579 | 174M| 180 | 295 |  19k|5954 |5047 |  19k|5975 |  38 |   0 | 383 | 8.000000e+02 | 8.180000e+02 |   2.25%
+ 6923s|   500 |   501 |613223 | 175M| 180 | 469 |  19k|5954 |5261 |  19k|5975 |  38 |   0 | 413 | 8.000000e+02 | 8.180000e+02 |   2.25%
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time (sec) : 7204.84
+Solving Nodes      : 529
+Primal Bound       : +8.18000000000000e+02 (1 solutions)
+Dual Bound         : +8.00000000000011e+02
+Gap                : 2.25 %
+
+primal solution:
+================
+
+objective value:                                  818
+Taught#1#1#2                                        1 	(obj:0)
+Taught#1#2#49                                       1 	(obj:0)
+Taught#1#4#47                                       1 	(obj:0)
+Taught#1#5#68                                       1 	(obj:5)
+Taught#1#7#23                                       1 	(obj:0)
+Taught#1#8#27                                       1 	(obj:0)
+Taught#1#9#13                                       1 	(obj:0)
+Taught#1#10#65                                      1 	(obj:10)
+Taught#1#11#62                                      1 	(obj:0)
+Taught#1#12#50                                      1 	(obj:0)
+Taught#2#1#47                                       1 	(obj:0)
+Taught#2#2#48                                       1 	(obj:0)
+Taught#2#5#30                                       1 	(obj:0)
+Taught#2#6#68                                       1 	(obj:5)
+Taught#2#7#9                                        1 	(obj:0)
+Taught#2#8#20                                       1 	(obj:12)
+Taught#2#9#21                                       1 	(obj:0)
+Taught#2#10#59                                      1 	(obj:0)
+Taught#2#11#14                                      1 	(obj:0)
+Taught#2#12#45                                      1 	(obj:0)
+Taught#3#4#58                                       1 	(obj:0)
+Taught#3#6#6                                        1 	(obj:0)
+Taught#3#7#24                                       1 	(obj:0)
+Taught#3#8#15                                       1 	(obj:0)
+Taught#3#9#20                                       1 	(obj:12)
+Taught#3#10#64                                      1 	(obj:37)
+Taught#3#11#17                                      1 	(obj:0)
+Taught#3#12#5                                       1 	(obj:0)
+Taught#4#4#57                                       1 	(obj:0)
+Taught#4#5#34                                       1 	(obj:0)
+Taught#4#6#52                                       1 	(obj:10)
+Taught#4#7#36                                       1 	(obj:0)
+Taught#4#8#25                                       1 	(obj:0)
+Taught#4#9#60                                       1 	(obj:0)
+Taught#4#10#3                                       1 	(obj:50)
+Taught#4#11#18                                      1 	(obj:24)
+Taught#4#12#5                                       1 	(obj:0)
+Taught#5#4#48                                       1 	(obj:0)
+Taught#5#7#16                                       1 	(obj:0)
+Taught#5#8#39                                       1 	(obj:0)
+Taught#5#9#4                                        1 	(obj:0)
+Taught#5#10#17                                      1 	(obj:0)
+Taught#5#11#37                                      1 	(obj:0)
+Taught#5#12#69                                      1 	(obj:0)
+Taught#6#7#22                                       1 	(obj:0)
+Taught#6#8#13                                       1 	(obj:0)
+Taught#6#9#7                                        1 	(obj:0)
+Taught#6#10#32                                      1 	(obj:12)
+Taught#6#11#53                                      1 	(obj:18)
+Taught#6#12#63                                      1 	(obj:7)
+Taught#7#4#2                                        1 	(obj:0)
+Taught#7#7#16                                       1 	(obj:0)
+Taught#7#8#7                                        1 	(obj:0)
+Taught#7#9#8                                        1 	(obj:0)
+Taught#7#10#32                                      1 	(obj:12)
+Taught#7#11#41                                      1 	(obj:35)
+Taught#7#12#63                                      1 	(obj:7)
+Taught#8#2#10                                       1 	(obj:0)
+Taught#8#7#21                                       1 	(obj:0)
+Taught#8#8#24                                       1 	(obj:0)
+Taught#8#9#8                                        1 	(obj:0)
+Taught#8#10#55                                      1 	(obj:4)
+Taught#8#11#26                                      1 	(obj:0)
+Taught#8#12#33                                      1 	(obj:0)
+Taught#9#1#42                                       1 	(obj:0)
+Taught#9#2#47                                       1 	(obj:0)
+Taught#9#3#56                                       1 	(obj:0)
+Taught#9#5#28                                       1 	(obj:2)
+Taught#9#7#25                                       1 	(obj:0)
+Taught#9#8#24                                       1 	(obj:0)
+Taught#9#9#52                                       1 	(obj:0)
+Taught#9#10#3                                       1 	(obj:50)
+Taught#9#11#40                                      1 	(obj:10)
+Taught#9#12#50                                      1 	(obj:0)
+Taught#10#2#56                                      1 	(obj:0)
+Taught#10#5#46                                      1 	(obj:0)
+Taught#10#7#54                                      1 	(obj:0)
+Taught#10#8#29                                      1 	(obj:12)
+Taught#10#9#19                                      1 	(obj:0)
+Taught#10#10#17                                     1 	(obj:0)
+Taught#10#11#3                                      1 	(obj:50)
+Taught#10#12#50                                     1 	(obj:0)
+Taught#11#2#10                                      1 	(obj:0)
+Taught#11#6#38                                      1 	(obj:0)
+Taught#11#7#15                                      1 	(obj:0)
+Taught#11#8#16                                      1 	(obj:0)
+Taught#11#9#12                                      1 	(obj:0)
+Taught#11#10#51                                     1 	(obj:0)
+Taught#11#11#32                                     1 	(obj:12)
+Taught#11#12#44                                     1 	(obj:0)
+Taught#12#2#38                                      1 	(obj:0)
+Taught#12#3#57                                      1 	(obj:0)
+Taught#12#5#46                                      1 	(obj:0)
+Taught#12#7#23                                      1 	(obj:0)
+Taught#12#8#16                                      1 	(obj:0)
+Taught#12#9#31                                      1 	(obj:8)
+Taught#12#10#37                                     1 	(obj:0)
+Taught#12#11#53                                     1 	(obj:18)
+Taught#12#12#44                                     1 	(obj:0)
+Taught#13#5#10                                      1 	(obj:0)
+Taught#13#7#23                                      1 	(obj:0)
+Taught#13#8#29                                      1 	(obj:12)
+Taught#13#9#31                                      1 	(obj:8)
+Taught#13#10#14                                     1 	(obj:0)
+Taught#13#11#59                                     1 	(obj:0)
+Taught#13#12#69                                     1 	(obj:0)
+Taught#14#6#6                                       1 	(obj:0)
+Taught#14#7#43                                      1 	(obj:0)
+Taught#14#8#4                                       1 	(obj:0)
+Taught#14#9#12                                      1 	(obj:0)
+Taught#14#10#51                                     1 	(obj:0)
+Taught#14#11#62                                     1 	(obj:0)
+Taught#14#12#69                                     1 	(obj:0)
+Taught#15#5#34                                      1 	(obj:0)
+Taught#15#7#43                                      1 	(obj:0)
+Taught#15#8#11                                      1 	(obj:17)
+Taught#15#9#70                                      1 	(obj:0)
+Taught#15#10#62                                     1 	(obj:0)
+Taught#15#11#65                                     1 	(obj:10)
+Taught#15#12#45                                     1 	(obj:0)
+Taught#16#1#34                                      1 	(obj:0)
+Taught#16#2#10                                      1 	(obj:0)
+Taught#16#3#30                                      1 	(obj:0)
+Taught#16#7#54                                      1 	(obj:0)
+Taught#16#8#36                                      1 	(obj:0)
+Taught#16#9#15                                      1 	(obj:0)
+Taught#16#10#51                                     1 	(obj:0)
+Taught#16#11#59                                     1 	(obj:0)
+Taught#16#12#45                                     1 	(obj:0)
+Taught#17#2#30                                      1 	(obj:0)
+Taught#17#7#39                                      1 	(obj:0)
+Taught#17#8#54                                      1 	(obj:0)
+Taught#17#9#27                                      1 	(obj:0)
+Taught#17#10#65                                     1 	(obj:10)
+Taught#17#11#53                                     1 	(obj:18)
+Taught#17#12#35                                     1 	(obj:4)
+Taught#18#2#57                                      1 	(obj:0)
+Taught#18#5#68                                      1 	(obj:5)
+Taught#18#6#46                                      1 	(obj:0)
+Taught#18#7#22                                      1 	(obj:0)
+Taught#18#8#1                                       1 	(obj:0)
+Taught#18#9#29                                      1 	(obj:12)
+Taught#18#10#41                                     1 	(obj:35)
+Taught#18#11#59                                     1 	(obj:0)
+Taught#18#12#67                                     1 	(obj:0)
+Taught#19#5#52                                      1 	(obj:10)
+Taught#19#7#9                                       1 	(obj:0)
+Taught#19#8#27                                      1 	(obj:0)
+Taught#19#9#61                                      1 	(obj:0)
+Taught#19#10#37                                     1 	(obj:0)
+Taught#19#11#26                                     1 	(obj:0)
+Taught#19#12#35                                     1 	(obj:4)
+Taught#20#5#48                                      1 	(obj:0)
+Taught#20#7#39                                      1 	(obj:0)
+Taught#20#8#17                                      1 	(obj:22)
+Taught#20#9#9                                       1 	(obj:0)
+Taught#20#10#41                                     1 	(obj:35)
+Taught#20#11#32                                     1 	(obj:12)
+Taught#20#12#44                                     1 	(obj:0)
+Taught#21#6#28                                      1 	(obj:2)
+Taught#21#7#24                                      1 	(obj:0)
+Taught#21#8#66                                      1 	(obj:0)
+Taught#21#9#22                                      1 	(obj:0)
+Taught#21#10#55                                     1 	(obj:4)
+Taught#21#11#41                                     1 	(obj:35)
+Taught#21#12#50                                     1 	(obj:0)
+Taught#22#1#42                                      1 	(obj:0)
+Taught#22#7#19                                      1 	(obj:0)
+Taught#22#8#13                                      1 	(obj:0)
+Taught#22#9#61                                      1 	(obj:0)
+Taught#22#10#55                                     1 	(obj:4)
+Taught#22#11#62                                     1 	(obj:0)
+Taught#22#12#35                                     1 	(obj:4)
+Taught#23#7#25                                      1 	(obj:0)
+Taught#23#8#61                                      1 	(obj:0)
+Taught#23#9#66                                      1 	(obj:0)
+Taught#23#10#26                                     1 	(obj:0)
+Taught#23#11#64                                     1 	(obj:37)
+Taught#23#12#33                                     1 	(obj:0)
+Taught#24#1#48                                      1 	(obj:0)
+Taught#24#2#56                                      1 	(obj:0)
+Taught#24#3#30                                      1 	(obj:0)
+Taught#24#4#47                                      1 	(obj:0)
+Taught#24#5#28                                      1 	(obj:2)
+Taught#24#6#58                                      1 	(obj:0)
+Taught#24#7#22                                      1 	(obj:0)
+Taught#24#8#1                                       1 	(obj:0)
+Taught#24#9#11                                      1 	(obj:17)
+Taught#24#10#18                                     1 	(obj:24)
+Taught#24#11#51                                     1 	(obj:0)
+Taught#24#12#63                                     1 	(obj:7)
+Taught#25#2#49                                      1 	(obj:0)
+Taught#25#4#58                                      1 	(obj:0)
+Taught#25#6#34                                      1 	(obj:0)
+Taught#25#7#9                                       1 	(obj:0)
+Taught#25#8#12                                      1 	(obj:0)
+Taught#25#9#60                                      1 	(obj:0)
+Taught#25#10#40                                     1 	(obj:10)
+Taught#25#11#53                                     1 	(obj:18)
+Taught#25#12#67                                     1 	(obj:0)
+CourseSchedule#1#4                                  1 	(obj:0)
+CourseSchedule#1#5                                  1 	(obj:0)
+CourseSchedule#2#1                                  1 	(obj:0)
+CourseSchedule#2#2                                  1 	(obj:0)
+CourseSchedule#3#1                                  1 	(obj:0)
+CourseSchedule#3#2                                  1 	(obj:0)
+CourseSchedule#4#1                                  1 	(obj:0)
+CourseSchedule#4#3                                  1 	(obj:0)
+CourseSchedule#5#1                                  1 	(obj:0)
+CourseSchedule#6#1                                  1 	(obj:0)
+CourseSchedule#6#3                                  1 	(obj:0)
+CourseSchedule#7#2                                  1 	(obj:0)
+CourseSchedule#8#2                                  1 	(obj:0)
+CourseSchedule#9#1                                  1 	(obj:0)
+CourseSchedule#9#4                                  1 	(obj:0)
+CourseSchedule#9#5                                  1 	(obj:0)
+CourseSchedule#10#2                                 1 	(obj:0)
+CourseSchedule#10#3                                 1 	(obj:0)
+CourseSchedule#10#4                                 1 	(obj:0)
+CourseSchedule#11#3                                 1 	(obj:0)
+CourseSchedule#11#5                                 1 	(obj:0)
+CourseSchedule#12#3                                 1 	(obj:0)
+CourseSchedule#12#5                                 1 	(obj:0)
+CourseSchedule#13#1                                 1 	(obj:0)
+CourseSchedule#13#2                                 1 	(obj:0)
+CourseSchedule#13#5                                 1 	(obj:0)
+CourseSchedule#14#1                                 1 	(obj:0)
+CourseSchedule#14#3                                 1 	(obj:0)
+CourseSchedule#15#1                                 1 	(obj:0)
+CourseSchedule#15#3                                 1 	(obj:0)
+CourseSchedule#15#4                                 1 	(obj:0)
+CourseSchedule#16#1                                 1 	(obj:0)
+CourseSchedule#16#2                                 1 	(obj:0)
+CourseSchedule#16#3                                 1 	(obj:0)
+CourseSchedule#17#1                                 1 	(obj:0)
+CourseSchedule#17#2                                 1 	(obj:0)
+CourseSchedule#17#4                                 1 	(obj:0)
+CourseSchedule#18#1                                 1 	(obj:0)
+CourseSchedule#18#5                                 1 	(obj:0)
+CourseSchedule#19#2                                 1 	(obj:0)
+CourseSchedule#19#5                                 1 	(obj:0)
+CourseSchedule#20#1                                 1 	(obj:0)
+CourseSchedule#21#1                                 1 	(obj:0)
+CourseSchedule#21#2                                 1 	(obj:0)
+CourseSchedule#22#2                                 1 	(obj:0)
+CourseSchedule#22#4                                 1 	(obj:0)
+CourseSchedule#22#5                                 1 	(obj:0)
+CourseSchedule#23#1                                 1 	(obj:0)
+CourseSchedule#23#3                                 1 	(obj:0)
+CourseSchedule#24#1                                 1 	(obj:0)
+CourseSchedule#24#2                                 1 	(obj:0)
+CourseSchedule#24#5                                 1 	(obj:0)
+CourseSchedule#25#1                                 1 	(obj:0)
+CourseSchedule#25#2                                 1 	(obj:0)
+CourseSchedule#25#5                                 1 	(obj:0)
+CourseSchedule#26#2                                 1 	(obj:0)
+CourseSchedule#26#4                                 1 	(obj:0)
+CourseSchedule#26#5                                 1 	(obj:0)
+CourseSchedule#27#1                                 1 	(obj:0)
+CourseSchedule#27#4                                 1 	(obj:0)
+CourseSchedule#28#2                                 1 	(obj:0)
+CourseSchedule#28#5                                 1 	(obj:0)
+CourseSchedule#29#2                                 1 	(obj:0)
+CourseSchedule#29#3                                 1 	(obj:0)
+CourseSchedule#29#4                                 1 	(obj:0)
+CourseSchedule#30#1                                 1 	(obj:0)
+CourseSchedule#30#4                                 1 	(obj:0)
+CourseSchedule#30#5                                 1 	(obj:0)
+CourseSchedule#31#3                                 1 	(obj:0)
+CourseSchedule#32#2                                 1 	(obj:0)
+CourseSchedule#32#3                                 1 	(obj:0)
+CourseSchedule#32#4                                 1 	(obj:0)
+CourseSchedule#33#2                                 1 	(obj:0)
+CourseSchedule#33#5                                 1 	(obj:0)
+CourseSchedule#34#1                                 1 	(obj:0)
+CourseSchedule#34#3                                 1 	(obj:0)
+CourseSchedule#34#4                                 1 	(obj:0)
+CourseSchedule#34#5                                 1 	(obj:0)
+CourseSchedule#35#4                                 1 	(obj:0)
+CourseSchedule#35#5                                 1 	(obj:0)
+CourseSchedule#36#1                                 1 	(obj:0)
+CourseSchedule#36#4                                 1 	(obj:0)
+CourseSchedule#37#1                                 1 	(obj:0)
+CourseSchedule#37#3                                 1 	(obj:0)
+CourseSchedule#37#4                                 1 	(obj:0)
+CourseSchedule#38#3                                 1 	(obj:0)
+CourseSchedule#39#1                                 1 	(obj:0)
+CourseSchedule#39#4                                 1 	(obj:0)
+CourseSchedule#40#2                                 1 	(obj:0)
+CourseSchedule#40#5                                 1 	(obj:0)
+CourseSchedule#41#2                                 1 	(obj:0)
+CourseSchedule#41#4                                 1 	(obj:0)
+CourseSchedule#41#5                                 1 	(obj:0)
+CourseSchedule#42#2                                 1 	(obj:0)
+CourseSchedule#42#5                                 1 	(obj:0)
+CourseSchedule#43#3                                 1 	(obj:0)
+CourseSchedule#44#3                                 1 	(obj:0)
+CourseSchedule#44#4                                 1 	(obj:0)
+CourseSchedule#45#1                                 1 	(obj:0)
+CourseSchedule#45#3                                 1 	(obj:0)
+CourseSchedule#45#4                                 1 	(obj:0)
+CourseSchedule#46#2                                 1 	(obj:0)
+CourseSchedule#46#3                                 1 	(obj:0)
+CourseSchedule#46#4                                 1 	(obj:0)
+CourseSchedule#47#1                                 1 	(obj:0)
+CourseSchedule#47#2                                 1 	(obj:0)
+CourseSchedule#47#5                                 1 	(obj:0)
+CourseSchedule#48#1                                 1 	(obj:0)
+CourseSchedule#48#4                                 1 	(obj:0)
+CourseSchedule#48#5                                 1 	(obj:0)
+CourseSchedule#49#1                                 1 	(obj:0)
+CourseSchedule#49#5                                 1 	(obj:0)
+CourseSchedule#50#1                                 1 	(obj:0)
+CourseSchedule#50#2                                 1 	(obj:0)
+CourseSchedule#50#5                                 1 	(obj:0)
+CourseSchedule#51#3                                 1 	(obj:0)
+CourseSchedule#51#4                                 1 	(obj:0)
+CourseSchedule#51#5                                 1 	(obj:0)
+CourseSchedule#52#1                                 1 	(obj:0)
+CourseSchedule#52#2                                 1 	(obj:0)
+CourseSchedule#52#4                                 1 	(obj:0)
+CourseSchedule#53#2                                 1 	(obj:0)
+CourseSchedule#53#3                                 1 	(obj:0)
+CourseSchedule#53#4                                 1 	(obj:0)
+CourseSchedule#53#5                                 1 	(obj:0)
+CourseSchedule#54#2                                 1 	(obj:0)
+CourseSchedule#54#4                                 1 	(obj:0)
+CourseSchedule#55#2                                 1 	(obj:0)
+CourseSchedule#55#5                                 1 	(obj:0)
+CourseSchedule#56#2                                 1 	(obj:0)
+CourseSchedule#56#5                                 1 	(obj:0)
+CourseSchedule#57#1                                 1 	(obj:0)
+CourseSchedule#57#3                                 1 	(obj:0)
+CourseSchedule#57#4                                 1 	(obj:0)
+CourseSchedule#58#1                                 1 	(obj:0)
+CourseSchedule#58#5                                 1 	(obj:0)
+CourseSchedule#59#1                                 1 	(obj:0)
+CourseSchedule#59#3                                 1 	(obj:0)
+CourseSchedule#59#4                                 1 	(obj:0)
+CourseSchedule#60#1                                 1 	(obj:0)
+CourseSchedule#60#5                                 1 	(obj:0)
+CourseSchedule#61#4                                 1 	(obj:0)
+CourseSchedule#61#5                                 1 	(obj:0)
+CourseSchedule#62#1                                 1 	(obj:0)
+CourseSchedule#62#3                                 1 	(obj:0)
+CourseSchedule#62#5                                 1 	(obj:0)
+CourseSchedule#63#2                                 1 	(obj:0)
+CourseSchedule#63#5                                 1 	(obj:0)
+CourseSchedule#64#1                                 1 	(obj:0)
+CourseSchedule#64#5                                 1 	(obj:0)
+CourseSchedule#65#1                                 1 	(obj:0)
+CourseSchedule#65#3                                 1 	(obj:0)
+CourseSchedule#65#4                                 1 	(obj:0)
+CourseSchedule#66#5                                 1 	(obj:0)
+CourseSchedule#67#4                                 1 	(obj:0)
+CourseSchedule#67#5                                 1 	(obj:0)
+CourseSchedule#68#1                                 1 	(obj:0)
+CourseSchedule#68#4                                 1 	(obj:0)
+CourseSchedule#69#1                                 1 	(obj:0)
+CourseSchedule#69#3                                 1 	(obj:0)
+CourseSchedule#70#3                                 1 	(obj:0)
+PatternPenalties#4#1                                1 	(obj:1)
+PatternPenalties#9#1                                1 	(obj:1)
+PatternPenalties#12#1                               1 	(obj:1)
+PatternPenalties#12#4                               1 	(obj:1)
+PatternPenalties#14#4                               1 	(obj:1)
+PatternPenalties#16#2                               1 	(obj:1)
+PatternPenalties#18#5                               1 	(obj:1)
+SingletonChecks#4#1#3                               1 	(obj:1)
+SingletonChecks#8#3#2                               1 	(obj:1)
+SingletonChecks#8#3#3                               1 	(obj:1)
+SingletonChecks#9#1#1                               1 	(obj:1)
+SingletonChecks#12#1#3                              1 	(obj:1)
+SingletonChecks#12#4#3                              1 	(obj:1)
+SingletonChecks#14#4#4                              1 	(obj:1)
+SingletonChecks#16#2#1                              1 	(obj:1)
+SingletonChecks#18#5#5                              1 	(obj:1)
+SingletonChecks#20#4#3                              1 	(obj:1)
+SingletonChecks#20#5#2                              1 	(obj:1)
+
+Statistics
+==========
+
+SCIP Status        : solving was interrupted [time limit reached]
+Solving Time       :    7204.84
+Original Problem   :
+  Problem name     : random_4.ctt.et.zpl
+  Variables        : 22020 (21950 binary, 70 integer, 0 implicit integer, 0 continuous)
+  Constraints      : 8563 initial, 8563 maximal
+Presolved Problem  :
+  Problem name     : t_random_4.ctt.et.zpl
+  Variables        : 19307 (19238 binary, 69 integer, 0 implicit integer, 0 continuous)
+  Constraints      : 5956 initial, 5956 maximal
+Presolvers         :       Time  FixedVars   AggrVars   ChgTypes  ChgBounds   AddHoles    DelCons   ChgSides   ChgCoefs
+  trivial          :       0.03          0          0          0          0          0          0          0          0
+  inttobinary      :       0.00          0          0          0          0          0          0          0          0
+  dualfix          :       0.01          1          0          0          0          0          0          0          0
+  implics          :       0.05          0          0          0          0          0          0          0          0
+  probing          :       3.64          0          0          0          0          0          0          0          0
+  knapsack         :      17.72          0          0          0          0          0          0          0          3
+  setppc           :       0.31          0          0          0          0          0         72          0          0
+  linear           :      12.42       2711          1          0       2711          0       2535       1965          0
+  logicor          :       0.00          0          0          0          0          0          0          0          0
+  root node        :          -      11911          -          -      11980          -          -          -          -
+Constraints        :     Number  #Separate #Propagate    #EnfoLP    #EnfoPS    Cutoffs    DomReds       Cuts      Conss   Children
+  integral         :          0          0          0        529          0          0          0          0          0       1058
+  knapsack         :       2500          6       2320          0          0          0         14          0          0          0
+  setppc           :       2762          6       2320          0          0          0      20958          0          0          0
+  linear           :        376          6       1536          0          0          0       5315          0          0          0
+  logicor          :        318          6        766          0          0          0        221          0          0          0
+Constraint Timings :  TotalTime   Separate  Propagate     EnfoLP     EnfoPS
+  integral         :    2849.60       0.00       0.00    2849.60       0.00
+  knapsack         :       2.37       1.42       0.95       0.00       0.00
+  setppc           :       0.72       0.00       0.72       0.00       0.00
+  linear           :       4.92       0.59       4.33       0.00       0.00
+  logicor          :       0.05       0.00       0.05       0.00       0.00
+Propagators        :       Time      Calls    Cutoffs    DomReds
+  rootredcost      :       0.03          1          0      11980
+  pseudoobj        :       0.02       2120          0          0
+Conflict Analysis  :       Time      Calls    Success  Conflicts   Literals    Reconvs ReconvLits   LP Iters
+  propagation      :       0.00          0          0          0        0.0          0        0.0          -
+  infeasible LP    :       0.00          0          0          0        0.0          0        0.0          0
+  bound exceed. LP :       0.00          0          0          0        0.0          0        0.0          0
+  strong branching :       0.00          0          0          0        0.0          0        0.0          0
+  pseudo solution  :       0.00          0          0          0        0.0          0        0.0          -
+  applied globally :          -          -          -          0        0.0          -          -          -
+  applied locally  :          -          -          -          0        0.0          -          -          -
+Separators         :       Time      Calls    Cutoffs    DomReds       Cuts      Conss
+  cut pool         :       0.00          5          -          -          3          -    (maximal pool size: 38)
+  redcost          :       2.42        518          0       4493          0          0
+  impliedbounds    :       0.04          6          0          0          0          0
+  intobj           :       0.00          0          0          0          0          0
+  gomory           :       2.53          6          0          0          0          0
+  strongcg         :       2.85          6          0          0          0          0
+  cmir             :       4.97          6          0          0          0          0
+  clique           :       0.33          6          0          0         35          0
+Pricers            :       Time      Calls       Vars
+  problem variables:       0.00          0          0
+Branching Rules    :       Time      Calls    Cutoffs    DomReds       Cuts      Conss   Children
+  relpscost        :    2849.60        529          0          0          0          0       1058
+  pscost           :       0.00          0          0          0          0          0          0
+  inference        :       0.00          0          0          0          0          0          0
+  mostinf          :       0.00          0          0          0          0          0          0
+  leastinf         :       0.00          0          0          0          0          0          0
+  fullstrong       :       0.00          0          0          0          0          0          0
+  allfullstrong    :       0.00          0          0          0          0          0          0
+Primal Heuristics  :       Time      Calls      Found
+  LP solutions     :       0.00          -          0
+  pseudo solutions :       0.00          -          0
+  rootsoldiving    :       0.00          0          0
+  linesearchdiving :       0.00          0          0
+  guideddiving     :       0.00          0          0
+  crossover        :       0.00          0          0
+  coefdiving       :       1.14          1          0
+  pscostdiving     :      87.88          1          0
+  fracdiving       :      99.75          1          0
+  feaspump         :     132.27          1          0
+  objpscostdiving  :     455.06          1          0
+  simplerounding   :       2.18        539          0
+  rounding         :       7.35        539          0
+  shifting         :       3.92         60          1
+  fixandinfer      :       0.00          0          0
+  intdiving        :       0.00          0          0
+  octane           :       0.00          0          0
+  rins             :       0.00          0          0
+  localbranching   :       0.00          0          0
+LP                 :       Time      Calls Iterations  Iter/call   Iter/sec
+  primal LP        :       0.05          0          0       0.00       0.00
+  dual LP          :    3505.65        535     542501    1014.02     154.75
+  barrier LP       :       0.00          0          0       0.00          -
+  diving/probing LP:     759.21       1201      97621      81.28     128.58
+  strong branching :    2849.31        429     408615     952.48     143.41
+    (at root node) :          -         30      29002     966.73          -
+  conflict analysis:       0.00          0          0       0.00          -
+B&B Tree           :
+  number of runs   :          1
+  nodes            :        529
+  nodes (total)    :        529
+  nodes left       :        530
+  max depth        :        180
+  max depth (total):        180
+  backtracks       :          4 (0.8%)
+  delayed cutoffs  :          0
+  repropagations   :          1 (0 domain reductions, 0 cutoffs)
+  avg switch length:       2.13
+  switching time   :       0.53
+Solution           :
+  Solutions found  :          1 (1 improvements)
+  Primal Bound     : +8.18000000000000e+02   (in run 1, after 181 nodes, 2909.46 seconds, depth 180, found by <shifting>)
+  Dual Bound       : +8.00000000000011e+02
+  Gap              :       2.25 %
+  Root Dual Bound  : +8.00000000000004e+02
